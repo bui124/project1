@@ -61,6 +61,106 @@
                 height: 700px;
                 }
             }
+            .carousel-indicators li {
+                text-indent: 0px !important;
+            }
+            .carousel-inner{
+    width:650px;
+    height: 850px;
+    margin: 0 auto;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    filter: invert(1);
+}
+#custCarousel{
+    margin-top: 20px;
+}
+#custCarousel .carousel-indicators {
+    position: static;
+    margin-top: 20px;
+}
+#custCarousel .carousel-indicators>li {
+    width: 100px;
+    margin-bottom: 80px;
+}
+#custCarousel .carousel-indicators li img {
+    display: block;
+    max-width: 100%;
+}
+#custCarousel .carousel-indicators li.active img {
+    border: 2px solid grey;
+}
+.carousel-item img {
+    width: 80%
+}
+.carousel-indicators li {
+    text-indent: 0px !important;
+}
+.img-fluid {
+    height: 50px;
+    width: 50px;
+}
+@media screen and (max-width: 800px){
+    .carousel-inner{
+        /* width:450px; */
+        width:100%;
+        height: 650px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 760px){
+    .carousel-indicators{
+        display: none !important;
+    }
+}
+/* new */
+.carousel-control-prev,
+    .carousel-control-next{
+        height: 50%;
+    }
+    .carousel-inner{
+        /* width:700px; */
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    #custCarousel{
+        margin-top: 20px;
+    }
+    #custCarousel .carousel-indicators {
+        position: static;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    #custCarousel .carousel-indicators>li {
+        width: 100px;
+        margin-bottom: 80px;
+    }
+    #custCarousel .carousel-indicators li img {
+        display: block;
+        max-width: 100%;
+    }
+    #custCarousel .carousel-indicators li.active img {
+        border: 1px solid black;
+    }
+    .carousel-item img {
+        width: 80%
+    }
+    @media screen and (max-width: 760px){
+        .carousel-inner{
+            width: 100%;
+            height: 650px;
+            margin: 0 auto;
+        }
+        .carousel-item img {
+            width: 80%;
+            height: 415px;
+            margin-bottom: 45%;
+        }
+    }
         </style>
         <script src="/assets/js/jquery.js"></script>
         <script src="/assets/js/plugins.min.js"></script>
@@ -313,12 +413,166 @@
                     </ol>
                 </div>
             </section>
-            <section id="content">
-                <div class="content-wrap">
-                    <div class="container clearfix">
-                        <p>Test</p>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="custCarousel" class="carousel slide" data-ride="carousel" align="center">
+                                <!-- slides -->
+                                <div class="carousel-inner d-flex align-items-center">
+                                    <div class="carousel-item active">
+                                        <img src="images/754_hom0001.jpg" alt="Nissan Leaf (complete)">
+                                        <h4>Nissan Leaf (complete)</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0002.jpg" alt="Nissan Leaf (incomplete)">
+                                        <h4>Nissan Leaf (incomplete)</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/496_hom0003.jpg" alt="Chanumas">
+                                        <h4>Chanumas</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0004.jpg" alt="Bedroom">
+                                        <h4>Bedroom</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0005.jpg" alt="Scrabble Game">
+                                        <h4>Scrabble Game</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0006.jpg" alt="Bowl of Fruits">
+                                        <h4>Bowl of Fruits</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0007.jpg" alt="Cook Off">
+                                        <h4>Cook Off</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/549_hom0008.jpg" alt="Bottles 1">
+                                        <h4>Bottles 1</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/565_hom0009.jpg" alt="Bottles 2">
+                                        <h4>Bottles 2</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0010.jpg" alt="Kooza">
+                                        <h4>Kooza</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0011.jpg" alt="Campground">
+                                        <h4>Campground</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0012.jpg" alt="Locations">
+                                        <h4>Locations</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/553_r-hom0013.png" alt="Bottle and Apple">
+                                        <h4>Bottle and Apple</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0014.jpg" alt="Oranges">
+                                        <h4>Oranges</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/636_hom0015.JPG" alt="Las Alamandas Resort">
+                                        <h4>Las Alamandas Resort</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/480_hom0016.JPG" alt="Veggies and Oil">
+                                        <h4>Veggies and Oil</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0017.jpg" alt="My Future Family and Home">
+                                        <h4>My Future Family and Home</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0018.jpg" alt="My Future Bedroom">
+                                        <h4>My Future Bedroom</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_fam0019.jpg" alt="My Future Family">
+                                        <h4>My Future Family</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0020.jpg" alt="Collage">
+                                        <h4>Collage</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/754_hom0021.jpg" alt="Architectural Home">
+                                        <h4>Architectural Home</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/626_smChristmas_Joy.jpg" alt="Joy's Christmas Tree">
+                                        <h4>Joy's Christmas Tree</h4>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/panther-11-bday-old-page.png" alt="Panther's 11th Birthday">
+                                        <h4>Panther's 11th Birthday</h4>
+                                    </div>
+                                </div> <!-- Left right -->
+                                <a class="carousel-control-prev" href="#custCarousel" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span> </a>
+                                <a class="carousel-control-next" href="#custCarousel" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span> </a> <!-- Thumbnails -->
+                                <ol class="carousel-indicators list-inline d-flex align-items-center">
+                                    <li class="list-inline-item selected active" data-slide-to="0"
+                                        data-target="#custCarousel"> <img src="images/754_hom0001.jpg"
+                                            class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="1" data-target="#custCarousel"> <img
+                                            src="images/754_hom0002.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="2" data-target="#custCarousel"> <img
+                                            src="images/496_hom0003.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="3" data-target="#custCarousel"> <img
+                                            src="images/754_hom0004.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="4" data-target="#custCarousel"> <img
+                                            src="images/754_hom0005.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="5" data-target="#custCarousel"> <img
+                                            src="images/754_hom0006.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="6" data-target="#custCarousel"> <img
+                                            src="images/754_hom0007.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="7" data-target="#custCarousel"> <img
+                                            src="images/549_hom0008.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="8" data-target="#custCarousel"> <img
+                                            src="images/565_hom0009.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="9" data-target="#custCarousel"> <img
+                                            src="images/754_hom0010.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="10" data-target="#custCarousel"> <img
+                                            src="images/754_hom0011.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="11" data-target="#custCarousel"> <img
+                                            src="images/754_hom0012.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="12" data-target="#custCarousel"> <img
+                                            src="images/553_r-hom0013.png" class="img-fluid"></li>
+                                        <li class="list-inline-item" data-slide-to="13" data-target="#custCarousel"> <img
+                                            src="images/754_hom0014.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="14" data-target="#custCarousel"> <img
+                                            src="images/636_hom0015.JPG" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="15" data-target="#custCarousel"> <img
+                                            src="images/480_hom0016.JPG" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="16" data-target="#custCarousel"> <img
+                                            src="images/754_hom0017.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="17" data-target="#custCarousel"> <img
+                                            src="images/754_hom0018.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="18" data-target="#custCarousel"> <img
+                                            src="images/754_fam0019.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="19" data-target="#custCarousel"> <img
+                                            src="images/754_hom0020.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="20" data-target="#custCarousel"> <img
+                                            src="images/754_hom0021.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="21" data-target="#custCarousel"> <img
+                                            src="images/626_smChristmas_Joy.jpg" class="img-fluid"></li>
+                                    <li class="list-inline-item" data-slide-to="22" data-target="#custCarousel"> <img
+                                            src="images/panther-11-bday-old-page.png" class="img-fluid"></li>
+                                </ol>
+                            </div>
+    
+                        </div>
+    
                     </div>
                 </div>
+    
             </section>
             <!-- #content end -->
             <footer id="footer" class="dark" style="">
